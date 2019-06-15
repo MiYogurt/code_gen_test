@@ -16,14 +16,14 @@ builders:
   property_sum:
     import: "package:builder_example/builder.dart"
     builder_factories: ["sumBuilder"]
-    build_extensions: { ".dart": [".sum.g.dart"] }
+    build_extensions: { ".dart": [".sum.g.part"] }
     auto_apply: dependents
     build_to: cache
     applies_builders: ["source_gen|combining_builder"]
   property_multiply:
     import: "package:builder_example/builder.dart"
     builder_factories: ["multiplyBuilder"]
-    build_extensions: { ".dart": [".multiply.g.dart"] }
+    build_extensions: { ".dart": [".multiply.g.part"] }
     auto_apply: dependents
     build_to: cache
     applies_builders: ["source_gen|combining_builder"]
